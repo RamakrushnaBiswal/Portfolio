@@ -88,23 +88,17 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #00ffaef1;
+    background: #252525ec;
 }
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.logo{
+    width: 70px;
 }
 
-.navbar .logo a span{
-    color: #00ffaef1;
-    transition: all 0.3s ease;
-}
 .navbar.sticky .logo a span{
     color: #252525;
 }
@@ -551,20 +545,25 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-.mypic{
-    width: 350px;
+.mypic {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: auto !important;
     float: right;
     border-radius: 80px;
     border: 5px solid #00ffaef1;
     margin-left: 40px;
 }
-.mypic:hover{
-    width: 350px;
+
+.mypic:hover {
+    width: 100% !important;
+    max-width: 350px !important;
     float: right;
     border-radius: 80px;
     border: 5px solid #FEE715;
-    margin-left: 40px;
+    margin-left: 40px;    
 }
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -692,3 +691,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
